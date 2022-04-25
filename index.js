@@ -30,13 +30,13 @@ async function main() {
 
 
 
-    console.log(new TokenId(0, 0, 588886).toString());
-    console.log(new NftId(new TokenId(0, 0, 588886), 1).toString());
+    console.log(new TokenId(0, 0, 3090078).toString());
+    console.log(new NftId(new TokenId(0, 0, 863882), 1).toString());
 
 
 
     const nftInfos = await new TokenNftInfoQuery()
-        .setNftId(new NftId(new TokenId(0, 0, 588886), 1))
+        .setNftId(new NftId(new TokenId(0, 0, 863882), 1))
         .execute(client);
 
     console.log(nftInfos);
